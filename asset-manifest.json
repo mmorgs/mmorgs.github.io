@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c84c31e8.chunk.css",
+    "main.js": "/static/js/main.4d189a0b.chunk.js",
+    "main.js.map": "/static/js/main.4d189a0b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.509fd534.js",
+    "runtime-main.js.map": "/static/js/runtime-main.509fd534.js.map",
+    "static/js/2.67b10661.chunk.js": "/static/js/2.67b10661.chunk.js",
+    "static/js/2.67b10661.chunk.js.map": "/static/js/2.67b10661.chunk.js.map",
+    "static/js/3.3c29c131.chunk.js": "/static/js/3.3c29c131.chunk.js",
+    "static/js/3.3c29c131.chunk.js.map": "/static/js/3.3c29c131.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c84c31e8.chunk.css.map": "/static/css/main.c84c31e8.chunk.css.map",
+    "static/js/2.67b10661.chunk.js.LICENSE.txt": "/static/js/2.67b10661.chunk.js.LICENSE.txt",
+    "static/media/canndescent.e00e1768.png": "/static/media/canndescent.e00e1768.png",
+    "static/media/firstcomputer.6c561900.jpg": "/static/media/firstcomputer.6c561900.jpg",
+    "static/media/gaad.6105c682.jpg": "/static/media/gaad.6105c682.jpg",
+    "static/media/goodbrands.cb9677c5.png": "/static/media/goodbrands.cb9677c5.png",
+    "static/media/repairsmith2.24a245a9.jpg": "/static/media/repairsmith2.24a245a9.jpg",
+    "static/media/thinknear.2227187c.jpg": "/static/media/thinknear.2227187c.jpg",
+    "static/media/ver.55088703.jpg": "/static/media/ver.55088703.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.509fd534.js",
+    "static/js/2.67b10661.chunk.js",
+    "static/css/main.c84c31e8.chunk.css",
+    "static/js/main.4d189a0b.chunk.js"
+  ]
+}
