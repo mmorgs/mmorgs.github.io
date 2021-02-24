@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "pages";
+
+.page {
+    @include margin-bottom(2);
+    &__title {
+        font-size: $typographic-base-font-size * 2.5;
+        font-weight: 500;
+        @include line-height(2);
+        @include margin-top(0);
+        @include margin-bottom(1.45);
+        display: none;
+    }
+    &__body {
+        font-size: $typographic-base-font-size;
+        @include line-height(1);
+        @include margin(0, 0, 1);
+    }
+}
+
+.layout {
+    max-width: 66.875rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar {
+    width: 100%;
+    margin-bottom: 24px;
+    &__inner {
+        position: relative;
+        padding: 25px 20px 0;
+    }
+    &__author {
+        &-photo {
+            display: inline-block;
+            margin-bottom: 0;
+            border-radius: 50%;
+            background-clip: padding-box;
+        }
+        &-title {
+            font-weight: 600;
+            letter-spacing: -1px;
+            text-transform: lowercase;
+            @include line-height(1.125);
+            @include margin(.5, 0, .5, 0);
+            &-link {
+                color: $color-base;
+                &:hover,
+                &:focus {
+                    color: $color-base;
+                }
+            }
+        }
+        &-subtitle {
+            color: $color-gray;
+            @include line-height(1);
+            @include margin-bottom(1);
+        }
+    }
+    &__copyright {
+        color: lighten($color-gray, 18%);
+        font-size: $typographic-small-font-size;
+    }
+}
+
+@include breakpoint-sm {
+    .content-wrapper {
+        display: flex;
+    }
+
+    .sidebar {
+        lost-column: 1/4;
+        flex-basis: 25%;
+        &__inner {
+            padding: 30px 20px 0;
+        }
+    }
+}
+
+@include breakpoint-md {
+    .sidebar {
+        lost-column: 1/5;
+        flex-basis: 20%;
+        &__inner {
+            padding: 40px;
+        }
+    }
+}
+
+.menu {
+    @include margin-bottom(1);
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        &-item {
+            padding: 0;
+            margin: 10px 0;
+            &-link {
+                font-size: $typographic-base-font-size;
+                color: $typographic-base-font-color;
+                font-weight: 400;
+                border: 0;
+                &:hover,
+                &:focus {
+                    color: $color-primary;
+                    border-bottom: 1px solid $color-primary;
+                }
+                &--active {
+                    color: $color-base;
+                    border-bottom: 1px solid $color-base;
+                }
+            }
+        }
+    }
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 4px;
+}

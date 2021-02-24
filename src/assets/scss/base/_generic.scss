@@ -1,0 +1,242 @@
+/** 
+ * Generic
+ */
+
+html {
+    font-size: $typographic-root-font-size;
+}
+
+body {
+    font-family: $typographic-font-family;
+    color: $typographic-base-font-color;
+    line-height: $typographic-base-line-height;
+    font-size: $typographic-base-font-size;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header,
+footer {
+    margin: 20px 20px 0;
+}
+
+header {
+    font-family: $heading-font-family;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint-md {
+        font-size: 32px;
+    }
+}
+
+footer {
+    font-size: 12px;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: $typographic-base-font-size * 2.5;
+    @include line-height(2);
+    @include margin-top(0);
+    @include margin-bottom(1);
+}
+
+h2 {
+    font-size: $typographic-base-font-size * 1.6875;
+    @include line-height(1.5);
+    @include margin-top(0);
+    @include margin-bottom(.5);
+}
+
+h3 {
+    font-size: $typographic-base-font-size * 1.375;
+    @include line-height(1);
+    @include margin-top(2);
+    @include margin-bottom(.5);
+}
+
+h4 {
+    font-size: $typographic-base-font-size * 1.2;
+    @include line-height(1);
+    @include margin-top(1.5);
+    @include margin-bottom(.5);
+}
+
+h5 {
+    font-size: $typographic-base-font-size;
+    @include line-height(1);
+    @include margin-top(2.5);
+    @include margin-bottom(.5);
+}
+
+h6 {
+    font-size: $typographic-base-font-size;
+    @include line-height(1);
+    @include margin-top(2.5);
+    @include margin-bottom(.5);
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    margin: inherit auto;
+}
+
+hr {
+    margin-top: 52px;
+    margin-bottom: 52px;
+    border: 0;
+    color: $color-base;
+    display: block;
+    height: 26px;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: 100% 26px;
+    background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $color-base 11px, $color-base 15px, transparent 15px, transparent 26px);
+    width: 100px;
+}
+
+a {
+    color: $typographic-link-p-font-color;
+    text-decoration: none;
+}
+
+b,
+strong {
+    font-weight: 500;
+}
+
+ul {
+    list-style: square;
+    @include margin-bottom(1);
+    & li {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+}
+
+p {
+    @include line-height(1);
+    @include margin-bottom(1);
+}
+
+blockquote {
+    padding: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+figure {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    @include line-height(.75);
+    @include margin-top(.25);
+    color: $color-base;
+    font-size: $typographic-small-font-size;
+    font-style: italic;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.layout {
+    lost-center: $layout-width;
+}
+
+.content {
+    &__inner {
+        padding: 25px 20px;
+    }
+}
+
+.project {
+    margin-bottom: 48px;
+}
+
+.project__image {
+    margin-bottom: 16px;
+
+    @breakpoint-sm {
+        margin-bottom: 0;
+    }
+}
+
+.project__image img {
+    border: 3px solid white;
+    outline: 1px solid black;
+    max-width: calc(100% - 8px);
+}
+
+.project__details a:hover {
+    text-decoration: underline;
+}
+
+@include breakpoint-sm {
+    figure.float-left,
+    figure.float-right {
+        max-width: 310px;
+        @include padding(0, 1, 0, 1);
+    }
+    .float-right {
+        float: right;
+    }
+    .float-left {
+        float: left;
+    }
+    .content {
+        lost-column: 7/12;
+        &__inner {
+            padding: 30px 20px;
+        }
+    }
+    header,
+    footer {
+        margin: 20px 20px;
+    }
+    .project {
+        display: flex;
+        margin-bottom: 32px;
+    }
+    .project__image {
+        margin-right: 24px;
+        flex: 1 0 33%;
+    }
+    .project__details {
+        flex: 3 1 67%;
+    }
+}
+
+@include breakpoint-md {
+    .content {
+        lost-column: 2/3;
+        &__inner {
+            padding: 40px 35px;
+        }
+    }
+    header,
+    footer {
+        margin: 10px 35px;
+    }
+}
