@@ -74,8 +74,8 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2>Other Projects</h2>
-            <p>These projects are over a year old, and have either been modified or the voting apps are no longer active.</p>
+            <h2>other projects</h2>
+            <p>sites and apps i've worked on as an employee of Fox and Diamond.</p>
             <ul>
               <li>Fox.com</li>
               <li>American Idol</li>
