@@ -80,7 +80,7 @@ export default function App() {
 
         </div>
 
-        <footer>&copy; 2019</footer>
+        <footer>&copy; 2021</footer>
       </div>
     </Router>
   );
